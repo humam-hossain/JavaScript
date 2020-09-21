@@ -1,0 +1,10 @@
+Data visualization with d3
+---------------------------------
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+1.d3 is a JavaScript object
+2.d3.select() method select html tags
+3.append() method apeends a html tag in a specific tag(selected)
+4.text() method write text in a specific tag that is selected
+5.
