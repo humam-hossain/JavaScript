@@ -1,0 +1,4 @@
+Select id/class
+--------------------
+document.querySelector('#id')
+documnet.querySelector('.class')
