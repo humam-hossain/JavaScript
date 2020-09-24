@@ -1,9 +1,29 @@
 JSON - JavaScript Object Notation
 AJAX - Asyncrhonous JavaScript And XML
 
-1.DOMContentLoader - execute only once page has finished loading
-	document.addEventListener('DOMContentLoader',function(){
-		//event_handlers
-	});
+media type = application/json
+extension = .json
 
-2.
+tools
+--------
+https://jsonlint.com/ - JSON validator
+
+fundamentals - JSON
+----------------------
+1. Always starts and ends with curly brackets {}
+2. name should be quoted("") in name/value
+
+Data Types - JSON
+-------------------
+1.Number 
+2.String (with quote)
+3.Boolean 
+4.Array
+5.Object
+6.null
+
+AJAX - fundamentals
+--------------------
+No refresh & can request,receive,send Data to a Server
+not a programming language - combination of technology within the browser XHR object + JavaScript to connect the request data and the Document Object Model(DOM)
+
