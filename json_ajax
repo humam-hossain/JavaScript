@@ -1,0 +1,9 @@
+JSON - JavaScript Object Notation
+AJAX - Asyncrhonous JavaScript And XML
+
+1.DOMContentLoader - execute only once page has finished loading
+	document.addEventListener('DOMContentLoader',function(){
+		//event_handlers
+	});
+
+2.
