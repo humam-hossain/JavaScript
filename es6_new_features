@@ -1,2 +1,0 @@
-instead of using "something " + variable, we can use `something ${something}`
-
