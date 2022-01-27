@@ -76,6 +76,8 @@ function winner(){
     });
 }
 
+// await not working for some reason
+
 await welcome();
 await askName();
 await question1();
