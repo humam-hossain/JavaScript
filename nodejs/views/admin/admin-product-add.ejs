@@ -1,5 +1,6 @@
 <%- include("../includes/head.ejs") %> 
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
     <%- include("../includes/navigation.ejs") %> 
@@ -8,6 +9,18 @@
                 <div class="form-control">
                     <label for="title">Title</label>
                     <input type="text" name="title" id="title">
+                </div>
+                <div class="form-control">
+                    <label for="imageUrl">Image Url</label>
+                    <input type="text" name="imageUrl" id="imageUrl">
+                </div>
+                <div class="form-control">
+                    <label for="price">Price</label>
+                    <input type="number" name="price" id="price">
+                </div>
+                <div class="form-control">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" rows="5" step=""0.01></textarea>
                 </div>
                 <button type="submit">Add Product</button>
             </form>
