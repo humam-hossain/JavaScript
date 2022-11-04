@@ -1,4 +1,4 @@
-const Product = require("../models/products");
+const Product = require("../models/product");
 
 exports.getIndex = (req, res, next) => {
     Product.fetchAll(products => {
@@ -15,8 +15,14 @@ exports.getIndex = (req, res, next) => {
 
 exports.getProduct = (req, res, next)=>{
     const id = req.params.productID;
-    console.log(id);
-    res.redirect("/");
+    Product.findById(id, product=> {
+        console.log(product);
+        res.render("shop/product-detail", {
+            docTitle: "product",
+            product: product,
+            path: "/"
+        });
+    });
 }
 
 exports.getProducts = (req, res, next) => {
