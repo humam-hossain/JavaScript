@@ -1,12 +1,12 @@
-<%- include("../includes/head.ejs") %> 
+<%- include("../includes/head.ejs") %>
     <link rel="stylesheet" href="/css/product.css">
 </head>
 <body>
-    <%- include("../includes/navigation.ejs") %> 
+    <%- include("../includes/navigation.ejs") %>
         <main>
             <% if(prods.length > 0) { %>
                 <div class="grid">
-                    <% for(let product of prods) { %> 
+                    <% for(let product of prods) { %>
                         <article class="card product-item">
                             <header class="card__header">
                                 <h1 class="product__title"><%= product.title %> </h1>
@@ -17,16 +17,17 @@
                                 <p class="product__description"><%= product.description %> </p>
                             </div>
                             <div class="card__actions">
-                                <a href="/admin/edit-product" class="btn btn-primary">Edit</a>
-                                <form action="/admin/edit-product" method="POST">
+                                <a href="/admin/edit-product/<%= product.id %>?edit=true" class="btn btn-primary">Edit</a>
+                                <form action="/admin/delete-product" method="POST">
+                                    <input type="hidden" name="productId" value="<%= product.id %>">
                                     <button class="btn btn-danger">Delete</button>
                                 </form>
                             </div>
                         </article>
-                    <% } %> 
+                    <% } %>
                 </div>
             <% }else { %>
                 <h1>No Products Found!</h1>
             <% }%>
         </main>
-<%- include("../includes/end.ejs") %> 
+<%- include("../includes/end.ejs") %>
